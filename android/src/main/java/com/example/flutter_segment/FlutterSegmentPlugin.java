@@ -92,6 +92,8 @@ public class FlutterSegmentPlugin implements MethodCallHandler, FlutterPlugin {
         analyticsBuilder.use(AppsflyerIntegration.FACTORY);
       }
 
+      analyticsBuilder.use(FirebaseIntegration.FACTORY);
+
       // Here we build a middleware that just appends data to the current context
       // using the [deepMerge] strategy.
       analyticsBuilder.middleware(

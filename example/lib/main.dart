@@ -10,7 +10,7 @@ void main() {
 
   Segment.config(
     options: SegmentConfig(
-      writeKey: 'YOUR_WRITE_KEY_GOES_HERE',
+      writeKey: 'bC6ebjzAJLlO0aSZDW9b7NB3cdFv52K4',
       trackApplicationLifecycleEvents: false,
     ),
   );
@@ -28,11 +28,7 @@ void main() {
   ///
   /// Aside from this special use case, any other context property that needs
   /// to be defined (or re-defined) can be done.
-  Segment.setContext({
-    'device': {
-      'token': 'testing',
-    }
-  });
+
 
   runApp(MyApp());
 }
@@ -45,7 +41,7 @@ class MyApp extends StatelessWidget {
     );
 
     // If you want to flush the data now
-    Segment.flush();
+    //Segment.flush();
 
     return MaterialApp(
       home: Scaffold(
